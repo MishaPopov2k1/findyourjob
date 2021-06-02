@@ -332,13 +332,14 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 2;
 }
 
 .modal-form{
     text-align: center;
     position: fixed;
-    left: 25%;
-    top: 15%;
+    left: 50%;
+    top: 50%;
     max-width: 750px;
     width: 100%;
     height: 540px;
@@ -347,6 +348,10 @@ img{
     box-shadow: 0px 4px 25px rgb(15 17 56 / 10%);
     background: #fff;
     border-radius: 5px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    transform: translate(-50%, -50%);
+    z-index: 14;
 }
 
 .modal-title{
@@ -358,6 +363,14 @@ img{
     color: #1A75E8;
 }
 
+.button:hover{
+    background: #1150af;
+}
+
+.button:active{
+    background: #003a92;
+}
+
 .close-modal-button{
     position: absolute;
     display: block;
@@ -366,6 +379,15 @@ img{
     right: 20px;
     text-decoration: none;
     color: #1A75E8;
+}
+
+
+.close-button:hover{
+    color: rgb(201, 0, 0);
+}
+
+.close-modal-button:hover{
+    color: rgb(201, 0, 0);
 }
 
 .button-modal{
@@ -477,7 +499,7 @@ img{
         height: 340;
         max-height: 100%;
         padding: 35px;
-        left: 15%;
+
     }
 
     .modal-input{
@@ -530,7 +552,7 @@ img{
         height: 300;
         max-height: 100%;
         padding: 30px;
-        left: 10%;
+    
     }
 
     .modal-title{
@@ -548,7 +570,7 @@ img{
         height: 500;
         max-height: 100%;
         padding: 20px;
-        left: 10%;
+        
     }
 
     .modal-title{
