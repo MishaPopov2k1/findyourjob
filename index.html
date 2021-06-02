@@ -46,10 +46,11 @@
                         </ul>
                     </nav>
                 </div>
+                
                 <div
                     class="col-lg-3 d-flex align-items-center justify-content-center  justify-content-lg-end flex-column flex-lg-row">
                     <a class="button button-link" href="#">Войти</a>
-                    <a class="button button-primary" href="#">Регистрация</a>
+                    <a class="button button-primary button-registration" href="#">Регистрация</a>
                 </div>
             </div>
             <div class="row pt-5 hero justify-content-center ">
@@ -341,7 +342,34 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal hidden">
+        <div class="overlay"></div>
+        <div class="container">
+            <form class="modal-form" action="#">
+                <a class="close-modal-button" href="#">&times;</a>
+                <h1 class="modal-title hero-title">
+                    Регистрируйся на FindYour<span class="job">Job</span>!
+                </h1>
+                <p class="modal-descp hero-text">
+                    Укажите ваше имя и оставьте адрес эл.почты,
+                     на который вам будут приходить уведомления 
+                     о вакансиях.
+                </p>
+                <input  class="modal-input" type="text" name="name" placeholder="Имя">
+                <input  class="modal-input" type="mail" name="mail" placeholder="Электронная почта">
+                <button class="button button-modal">
+                    <img class="subcribe-img" src="img/subcribe-img.svg" alt="img: letter">
+                    <span
+                        class="button-text">Отправить</span>
+                </button>
+                
+            </form>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
