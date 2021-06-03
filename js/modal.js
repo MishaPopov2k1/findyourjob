@@ -10,7 +10,6 @@ const modalToggle = ()=>{
 registrationButton.addEventListener('click', modalToggle);
 
 modalRegistration.addEventListener('click', (event) => {
-    console.log(event.target);
     const target = event.target;
 
     if (target.classList.contains('overlay') ||
